@@ -1,12 +1,13 @@
-import React from "react";
+import Carrousel from "./components/Carrousel.jsx";
 import Accordion from "react-bootstrap/Accordion";
+import RadioBtn from "./components/RadioBtn.jsx";
+import Exampled from "./components/Exampled.jsx";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Carrousel from "./components/Carrousel.jsx";
-import { Alert } from "react-bootstrap";
+import React from "react";
 
-function App() {
+export default function App() {
   return (
     <div class="container">
       <br></br>
@@ -88,13 +89,8 @@ function App() {
             <h5>Rodapé de Informações</h5>
           </Accordion.Header>
           <Accordion.Body>
-            <Form>
-              <Form.Check
-                type="switch"
-                id="custom-switch"
-                label="Seu site tem Rodapé de Informações?"
-              />
-            </Form>
+            <RadioBtn></RadioBtn>
+            <Exampled></Exampled>
           </Accordion.Body>
         </Accordion.Item>
         {/*                      */}
@@ -111,5 +107,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
